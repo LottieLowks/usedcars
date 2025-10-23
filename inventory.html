@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inventory — CrogHouse Motors</title>
+  <title>Inventory | CrogHouse Motors</title>
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
@@ -11,41 +11,58 @@
     <div class="logo">CrogHouse Motors</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="inventory.html">Inventory</a>
+      <a href="inventory.html" class="active">Inventory</a>
       <a href="about.html">About</a>
       <a href="#apply">Apply</a>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Inventory</h1>
-    <div class="grid" id="inventory-grid">
-      <!-- Copy this block for each car you add; change image, name, price, VIN -->
+  <main>
+    <section class="inventory">
+      <h1>Current Inventory</h1>
+      <p>Fresh stock updated weekly. Vehicles are first-come, first-serve.</p>
+
+      <!-- Buffalo STX -->
       <div class="car-card">
-        <img src="images/buffalo.jpg" alt="Buffalo STX">
-        <h3>Buffalo STX</h3>
-        <p class="price">$45,000</p>
-        <p class="vin">VIN: 5DS93A-LS-1023</p>
-        <button class="btn" onclick="openApply('Buffalo STX')">Apply to Buy</button>
+        <h2>Buffalo STX</h2>
+        <div class="gallery">
+          <img src="images/buffalo/buffalo-front.webp" alt="Buffalo STX Front">
+          <img src="images/buffalo/buffalo-front-quarter.webp" alt="Buffalo STX Front Quarter">
+          <img src="images/buffalo/buffalo-side.webp" alt="Buffalo STX Side">
+          <img src="images/buffalo/buffalo-rear.webp" alt="Buffalo STX Rear">
+          <img src="images/buffalo/buffalo-rear-quarter.webp" alt="Buffalo STX Rear Quarter">
+        </div>
+        <div class="car-info">
+          <p class="price">$45,000</p>
+          <p class="vin">VIN: 5DS93A-LS-1023</p>
+          <p>Clean title, armored package, low mileage. Perfect daily or pursuit-ready muscle.</p>
+          <a class="btn" href="#apply">Apply to Purchase</a>
+        </div>
       </div>
 
-      <div class="car-card sold">
-        <img src="images/sultan.jpg" alt="Sultan RS">
-        <h3>Sultan RS</h3>
-        <p class="price">$32,500</p>
-        <p class="vin">VIN: 2LRC-09234</p>
-        <span class="status">SOLD</span>
+      <!-- Sultan RS -->
+      <div class="car-card">
+        <h2>Sultan RS</h2>
+        <div class="gallery">
+          <img src="images/sultanrs/sultanrs-front.webp" alt="Sultan RS Front">
+          <img src="images/sultanrs/sultanrs-front-quarter.webp" alt="Sultan RS Front Quarter">
+          <img src="images/sultanrs/sultanrs-side.webp" alt="Sultan RS Side">
+          <img src="images/sultanrs/sultanrs-rear.webp" alt="Sultan RS Rear">
+          <img src="images/sultanrs/sultanrs-rear-quarter.webp" alt="Sultan RS Rear Quarter">
+        </div>
+        <div class="car-info">
+          <p class="price">$32,500</p>
+          <p class="vin">VIN: 2LRC-09234</p>
+          <p>Turbocharged AWD classic. Street-ready, tuner-approved, and fully legal.</p>
+          <a class="btn" href="#apply">Apply to Purchase</a>
+        </div>
       </div>
-      <!-- end car blocks -->
-    </div>
+
+    </section>
   </main>
 
   <footer>
-    <p>Contact: Discord: @CrogHouse#0000</p>
-    <p id="update-date-inv"></p>
+    <p>© 2025 CrogHouse Motors — Built for Los Santos RP</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
