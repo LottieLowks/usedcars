@@ -1,1 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inventory — CrogHouse Motors</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CrogHouse Motors</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="about.html">About</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Inventory</h1>
+    <div class="grid" id="inventory-grid">
+      <!-- Copy this block for each car you add; change image, name, price, VIN -->
+      <div class="car-card">
+        <img src="images/buffalo.jpg" alt="Buffalo STX">
+        <h3>Buffalo STX</h3>
+        <p class="price">$45,000</p>
+        <p class="vin">VIN: 5DS93A-LS-1023</p>
+        <button class="btn" onclick="openApply('Buffalo STX')">Apply to Buy</button>
+      </div>
+
+      <div class="car-card sold">
+        <img src="images/sultan.jpg" alt="Sultan RS">
+        <h3>Sultan RS</h3>
+        <p class="price">$32,500</p>
+        <p class="vin">VIN: 2LRC-09234</p>
+        <span class="status">SOLD</span>
+      </div>
+      <!-- end car blocks -->
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: Discord: @CrogHouse#0000</p>
+    <p id="update-date-inv"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
