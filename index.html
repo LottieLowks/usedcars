@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrogHouse Motors</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CrogHouse Motors</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="about.html">About</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/lot.jpg" alt="Lot" class="hero-img"/>
+      <div class="hero-text">
+        <h1>Your Ride. Your Hustle.</h1>
+        <p>Used cars, repo specials, and quick deals across Los Santos.</p>
+        <a class="btn" href="inventory.html">View Inventory</a>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Vehicles</h2>
+      <div class="grid" id="featured-grid">
+        <!-- example cards; update or remove as you like -->
+        <div class="car-card">
+          <img src="images/buffalo.jpg" alt="Buffalo STX">
+          <h3>Buffalo STX</h3>
+          <p class="price">$45,000</p>
+          <p class="vin">VIN: 5DS93A-LS-1023</p>
+          <a class="btn small" href="inventory.html">See Details</a>
+        </div>
+
+        <div class="car-card sold">
+          <img src="images/sultan.jpg" alt="Sultan RS">
+          <h3>Sultan RS</h3>
+          <p class="price">$32,500</p>
+          <p class="vin">VIN: 2LRC-09234</p>
+          <span class="status">SOLD</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="apply">
+      <h2>Apply for Financing</h2>
+      <p>Use this quick form (in character) — we’ll respond on Discord.</p>
+      <a class="btn" href="https://forms.gle/PUT-YOUR-GOOGLE-FORM-LINK-HERE" target="_blank">Open Application</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <strong>Discord: @CrogHouse#0000</strong> • Hours: 10:00–20:00</p>
+    <p id="update-date"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
